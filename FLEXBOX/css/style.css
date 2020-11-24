@@ -35,16 +35,21 @@ body {
 
 .item:nth-child(1) {
     height: 90px;
+    order: 1;
 }
 
 .item:nth-child(2) {
     height: 25px;
+    order: 2;
 }
 
 .item:nth-child(3) {
     height: 50px;
+    order: 3;
 }
 
 .item:nth-child(4) {
     height: 15px;
+    order: 4;
 }
+
