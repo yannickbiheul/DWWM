@@ -1,15 +1,31 @@
-$("button").click(function() {
-    $("#main").append(`<div class="essai" id="dossier4">Dossier 4</div>`);
-})
+$(function($) { 
+/* Similaire à : jQuery(document).ready(function(){}); Le $ en paramètre de fonction sert à éviter les conflits avec d'autres bibliothèques. */
 
-// $(".essai").click(function() {
-//     var id = $(this).attr('id');
-//     alert(id);
-// }) 
-
-$(document).on("click", ".essai", function() {
-    var id = $(this).attr('id');
-    alert(id);
+    console.log("jQuery est prêt !!!");
 });
 
-$("#titre").append(`<h1>Un Titre</h1>`);
+
+
+
+
+
+
+
+
+
+
+// $("button").click(function() {
+//     $("#main").append(`<div class="essai" id="dossier4">Dossier 4</div>`);
+// })
+
+// // $(".essai").click(function() {
+// //     var id = $(this).attr('id');
+// //     alert(id);
+// // }) 
+
+// $(document).on("click", ".essai", function() {
+//     var id = $(this).attr('id');
+//     alert(id);
+// });
+
+// $("#titre").append(`<h1>Un Titre</h1>`);
