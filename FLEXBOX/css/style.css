@@ -15,7 +15,7 @@ body {
     width: 75%;
     height: auto;
     background-color: grey;
-    display: flex;  /* inline-flex : le container prend la taille de ses éléments. */
+    display: flex;  /* inline-flex : le container prend sa taille en fonction de ses éléments. */
     flex-direction: row;
     justify-content: space-evenly;
     align-items: baseline;
