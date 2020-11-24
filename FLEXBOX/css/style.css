@@ -7,6 +7,7 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -17,9 +18,26 @@ body {
     background-color: grey;
     display: flex;  /* inline-flex : le container prend sa taille en fonction de ses éléments. */
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: baseline;
     flex-wrap: wrap;
+    margin: 20px;
+}
+
+.container2 {
+    justify-content: center;
+}
+
+.container3 {
+    justify-content: flex-end;
+}
+
+.container4 {
+    justify-content: space-between;;
+}
+
+.container5 {
+    justify-content: space-around;
 }
 
 .item {
@@ -49,7 +67,7 @@ body {
 }
 
 .item:nth-child(4) {
-    height: 15px;
+    height: 100px;
     order: 4;
 }
 

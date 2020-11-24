@@ -90,13 +90,13 @@
 /* Positions initiales des aiguilles */
 #aiguilleheure {
     position: absolute; 
-    top: 140px; 
+    top: 100px; 
     left: 200px; 
     transform: translate(-25%, 0);
     width: 20px; 
     height: 20px; 
     border-radius: 50%;
-    background-color: red; 
+    border: 1px solid red; 
     font-size: 0.5em; 
     color: #fff; 
     display: flex; 
@@ -106,13 +106,13 @@
 
 #aiguilleminute {
     position: absolute; 
-    top: 120px; 
+    top: 100px; 
     left: 200px; 
     transform: translate(-25%, 0);
     width: 20px; 
     height: 20px; 
     border-radius: 50%; 
-    background-color: blue; 
+    border: 1px solid blue; 
     font-size: 0.5em; 
     color: #fff; 
     display: flex; 

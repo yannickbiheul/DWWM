@@ -14,14 +14,32 @@
 // 		}
 
 let chiffres = document.getElementsByClassName("chiffre");
-console.log(window.getComputedStyle(chiffres[0]).left);
 let aiguilleHeures = document.getElementById("aiguilleheure");
 let aiguilleMinutes = document.getElementById("aiguilleminute");
+let index = 0;
+let indic = false;
 
-function tourne() {
-    
-    aiguilleHeures.style.left += 50;
-        
+let positionChiffresTop = [];
+let positionChiffresLeft = [];
+
+for (let i = 0; i < chiffres.length; i++) {
+	positionChiffresTop.push(window.getComputedStyle(chiffres[i]).top);
+	positionChiffresLeft.push(window.getComputedStyle(chiffres[i]).left);
 }
 
-setTimeout("tourne()", "3000");
+console.log(positionChiffresTop);
+console.log(positionChiffresLeft);
+
+function tourne() {
+	setInterval(function () {
+		if (indic) {
+			aiguilleMinutes.style.top = positionChiffresTop[index];
+			aiguilleMinutes.style.left = positionChiffresLeft[index];
+			index++;
+		} else {
+			clearInterval();
+		}
+	}, 1000);
+}
+
+// setInterval(tourne(), 1000);
