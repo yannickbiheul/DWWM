@@ -11,3 +11,5 @@ $(document).on("click", ".essai", function() {
     var id = $(this).attr('id');
     alert(id);
 });
+
+$("#titre").append(`<h1>Un Titre</h1>`);
