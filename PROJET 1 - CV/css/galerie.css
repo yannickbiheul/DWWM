@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #16222a, #3a6073);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 0;
+    color: #f1f1f1;
+}
+
+.grille {
+    max-width: 1300px;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    /* border: 1px solid #333; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    gap: 10px;
+}
+
+.grid-item {
+    width: 300px;
+    height: 200px;
+    background: #333;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #000;
+    background-color: #192a56;
+    cursor: pointer;
+    border: 5px solid #fff;
+}
+
+.grid-item:hover {
+    border: 2px solid #fff;
+}
+
+.bubulles1 {
+    background: url(../images/bubulles.jpg);
+    background-size: cover;
+}
+.bubulles2 {
+    background: url(../images/bubulles2.jpg);
+    background-size: cover;
+}
+.bubulles3 {
+    background: url(../images/bubulles3.jpg);
+    background-size: cover;
+}
+.bubulles4 {
+    background: url(../images/bubulles4.jpg);
+    background-size: cover;
+}
+.bubulles5 {
+    background: url(../images/bubulles8.jpg);
+    background-size: cover;
+}
+.bubulles6 {
+    background: url(../images/bubulles9.jpg);
+    background-size: cover;
+}
+.bubulles7 {
+    background: url(../images/bubulles11.jpg);
+    background-size: cover;
+}
+.bubulles8 {
+    background: url(../images/bubulles13.jpg);
+    background-size: cover;
+}
+.bubulles9 {
+    background: url(../images/bubulles14.jpg);
+    background-size: cover;
+}
+.bubulles10 {
+    background: url(../images/bubulles15.jpg);
+    background-size: cover;
+}
+.bubulles11 {
+    background: url(../images/bubulles16.jpg);
+    background-size: cover;
+}
+.bubulles12 {
+    background: url(../images/bubulles18.png);
+    background-size: cover;
+}
