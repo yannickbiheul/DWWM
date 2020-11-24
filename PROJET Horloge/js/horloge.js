@@ -12,3 +12,16 @@
 // 		if (indic) window.setTimeout("tourne()", "1000");
 // .....
 // 		}
+
+let chiffres = document.getElementsByClassName("chiffre");
+console.log(window.getComputedStyle(chiffres[0]).left);
+let aiguilleHeures = document.getElementById("aiguilleheure");
+let aiguilleMinutes = document.getElementById("aiguilleminute");
+
+function tourne() {
+    
+    aiguilleHeures.style.left += 50;
+        
+}
+
+setTimeout("tourne()", "3000");

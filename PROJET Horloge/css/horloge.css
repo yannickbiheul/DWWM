@@ -1,4 +1,9 @@
-
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
 
 /* Positions des chiffres sur le cadran*/
 #chiffre12 {
@@ -85,10 +90,12 @@
 /* Positions initiales des aiguilles */
 #aiguilleheure {
     position: absolute; 
-    top: 110px; 
+    top: 140px; 
     left: 200px; 
-    width: 10px; 
-    height: 10px; 
+    transform: translate(-25%, 0);
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%;
     background-color: red; 
     font-size: 0.5em; 
     color: #fff; 
@@ -99,10 +106,12 @@
 
 #aiguilleminute {
     position: absolute; 
-    top: 100px; 
+    top: 120px; 
     left: 200px; 
-    width: 10px; 
-    height: 10px; 
+    transform: translate(-25%, 0);
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
     background-color: blue; 
     font-size: 0.5em; 
     color: #fff; 
