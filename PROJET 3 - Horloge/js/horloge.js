@@ -19,6 +19,7 @@ let aiguilleHeures = document.getElementById("aiguilleheure");
 let aiguilleMinutes = document.getElementById("aiguilleminute");
 // Déclaration d'un index pour savoir où que c'est que j'en suis
 let index = 0;
+let indexH = 0;
 // L'indic pour le bouton
 let indic = false;
 
@@ -45,20 +46,46 @@ function tourne() {
 					aiguilleMinutes.style.top = positionChiffresTop[index];
 					aiguilleMinutes.style.left = positionChiffresLeft[index];
 				}
-			} else if (index == 12) {
+			} else {
 				index = 0;
 				for (let i = index; i < chiffres.length; i++) {
-					aiguilleMinutes.style.top = positionChiffresTop[i];
-					aiguilleMinutes.style.left = positionChiffresLeft[i];
-					aiguilleHeures.style.top = positionChiffresTop[i + 1];
-					aiguilleHeures.style.left = positionChiffresLeft[i + 1];
+					aiguilleMinutes.style.top = positionChiffresTop[index];
+					aiguilleMinutes.style.left = positionChiffresLeft[index];
+					aiguilleHeures.style.top = positionChiffresTop[indexH];
+					aiguilleHeures.style.left = positionChiffresLeft[indexH];
 				}
+				indexH++;
 			}
 			index++;
 		} else {
-			clearInterval();
+			clearInterval(tourne());
 		}
 	}, 500);
 }
 
+// let tourne = function() {
+// 	if (indic) {
+// 		if (index < 12) {
+// 			for (let i = index; i < chiffres.length; i++) {
+// 				aiguilleMinutes.style.top = positionChiffresTop[index];
+// 				aiguilleMinutes.style.left = positionChiffresLeft[index];
+// 			}
+// 		} else {
+// 			index = 0;
+// 			for (let i = index; i < chiffres.length; i++) {
+// 				aiguilleMinutes.style.top = positionChiffresTop[index];
+// 				aiguilleMinutes.style.left = positionChiffresLeft[index];
+// 				aiguilleHeures.style.top = positionChiffresTop[indexH];
+// 				aiguilleHeures.style.left = positionChiffresLeft[indexH];
+// 			}
+// 			indexH++;
+// 		}
+// 		index++;
+// 	} else {
+// 		clearInterval(tourne);
+// 	}
+// };
+
 // setInterval(tourne(), 1000);
+
+
