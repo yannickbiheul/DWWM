@@ -239,13 +239,17 @@ nav a:hover {
 
 
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 800px) {
     .nom h1 {
         font-size: 3.5em;
     }
 
     #maPhoto2 {
         width: 150px;
+    }
+
+    .containerPresentation {
+        font-size: 1.1em;
     }
 }
 
