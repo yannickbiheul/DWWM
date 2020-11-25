@@ -21,25 +21,6 @@
 }
 
 button {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 150px;
-    transform: translate(-50%);
-    background: linear-gradient(to right, #a8c0ff, #3f2b96);
-    color: #fff;
-    box-shadow: 4px 4px 4px #000;
-    border: 1px solid #fff;
-    transition-duration: 0.5s;
-}
-
-button:hover {
-    width: 90px;
-    height: 90px;
-    margin-bottom: 30px;
-    font-size: 1.2em;
-    box-shadow: 8px 8px 4px #000;
-    border: 2px solid #fff;
+    display: inline-block;
+    margin: 20px;
 }
