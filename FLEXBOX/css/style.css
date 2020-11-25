@@ -54,11 +54,13 @@ body {
 .item:nth-child(1) {
     height: 90px;
     order: 1;
+    flex-grow: 1;
 }
 
 .item:nth-child(2) {
     height: 25px;
     order: 2;
+    flex-basis: 500px;
 }
 
 .item:nth-child(3) {
