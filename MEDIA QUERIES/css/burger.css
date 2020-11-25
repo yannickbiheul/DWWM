@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav {
+    border: 1px solid #fff;
+}
+
+#accueil {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #00b4db, #0083b0);
+}
