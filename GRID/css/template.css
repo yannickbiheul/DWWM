@@ -43,6 +43,7 @@ nav {
 
 nav p {
     margin-bottom: 40px;
+    display: none;
 }
 
 nav a {
@@ -87,6 +88,21 @@ nav a {
     width: 100%;
     height: 4px;
     background-color: #fff;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
 }
 
 #accueil {
@@ -150,6 +166,7 @@ footer {
 
     nav p {
         margin: 0;
+        display: block;
     }
 
     .elts {
