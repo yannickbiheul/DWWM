@@ -139,7 +139,7 @@ nav a {
 #accueil {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background: linear-gradient(to right, #2c3e50, #3498db);
+    background: linear-gradient(to bottom, #000000, #434343);
     background-size: cover;
     background-position: center;
     display: flex;
