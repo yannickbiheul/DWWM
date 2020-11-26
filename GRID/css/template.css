@@ -139,7 +139,7 @@ nav a {
 #accueil {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.4)50%, rgba(0, 0, 0, 0.4)50%), url(../images/bubulles.jpg);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.4)50%, rgba(0, 0, 0, 0.4)50%);
     background-size: cover;
     background-position: center;
     display: flex;
