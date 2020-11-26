@@ -1,0 +1,43 @@
+.container {
+    background-color: aqua;
+    margin: 30px auto;
+    display: grid;
+    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    color: #fff;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 {
+    background-color: blue;
+    grid-column: 1 / 4;
+}
+
+.item2 {
+    background-color: green;
+    grid-column: 1 / 2;
+}
+
+.item3 {
+    background-color: red;
+    grid-column: 2 / 4;
+}
+
+.item4 {
+    background-color: orange;
+}
+
+.item5 {
+    background-color: black;
+}
+
+.item6 {
+    background-color: darkorchid;
+}
