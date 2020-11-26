@@ -190,10 +190,6 @@ footer {
         display: block;
     }
 
-    .elts {
-        display: none;
-    }
-
     #accueil {
         grid-column: 1 / 2;
         grid-row: 2 / 4;
