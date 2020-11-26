@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --blue: #2980b9;
+    --green: #27ae60;
+    --red: #c0392b;
+    --yellow: #f1c40f;
+    --orange: #d35400;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    color: #fff;
+}
+
+header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: var(--orange);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav p {
+    margin-bottom: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+
+.boutonBurger {
+    /* border: 1px solid #fff; */
+    width: 40px;
+    height: 40px;
+    margin-left: 40px;
+    display: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.ligne {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+}
+
+.ligne::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+}
+
+.ligne::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+}
+
+#accueil {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menuBurger {
+    width: 100%;
+    height: 100%;
+    background-color: var(--orange);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: absolute;
+}
+
+.menuBurgerOpen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 6fr 1fr;
+    }
+
+    header {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    nav {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        flex-direction: row;
+    }
+
+    .boutonBurger {
+        display: flex;
+    }
+
+    nav p {
+        margin: 0;
+    }
+
+    .elts {
+        display: none;
+    }
+
+    #accueil {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    footer {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+}
