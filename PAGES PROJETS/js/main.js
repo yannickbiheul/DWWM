@@ -8,6 +8,13 @@
 
 let boutonBurger = document.querySelector(".boutonBurger");
 let menuBurger = document.querySelector(".menuBurger");
+let elts = document.querySelectorAll(".elt");
+
+for (let i = 0; i < elts.length; i++) {
+    elts[i].addEventListener("click", function() {
+        menuBurger.classList.toggle("menuBurgerOpen");
+    })
+}
 
 boutonBurger.addEventListener("click", function () {
     menuBurger.classList.toggle("menuBurgerOpen");
@@ -15,9 +22,77 @@ boutonBurger.addEventListener("click", function () {
 
 
 
+$(".navAccueil").click(function() {
+    $("#demarrage").css({
+        display: "flex"
+    });
+    $("#slider").css({
+        display: "none"
+    });
+    $("#retroMachin").css({
+        display: "none"
+    });
+    $("#monCV").css({
+        display: "none"
+    });
+})
+
+$(".navCV").click(function() {
+    $("#demarrage").css({
+        display: "none"
+    });
+    $("#slider").css({
+        display: "none"
+    });
+    $("#retroMachin").css({
+        display: "none"
+    });
+    $("#monCV").css({
+        display: "flex"
+    });
+})
+
+$(".navSlider").click(function() {
+    $("#demarrage").css({
+        display: "none"
+    });
+    $("#slider").css({
+        display: "flex"
+    });
+    $("#retroMachin").css({
+        display: "none"
+    });
+    $("#monCV").css({
+        display: "none"
+    });
+})
+
+$(".navRetro").click(function() {
+    $("#demarrage").css({
+        display: "none"
+    });
+    $("#slider").css({
+        display: "none"
+    });
+    $("#retroMachin").css({
+        display: "flex"
+    });
+    $("#monCV").css({
+        display: "none"
+    });
+})
+
+
+
 /* NAVIGATION */
 
-$(".lienCV").click(function() {
+$(".lienAccueil").click(function() {
+    $("#demarrage").css({
+        display: "flex"
+    });
+    $("#monCV").css({
+        display: "none"
+    });
     $("#slider").css({
         display: "none"
     });
@@ -26,30 +101,62 @@ $(".lienCV").click(function() {
     });
 })
 
+$(".lienCV").click(function() {
+    $("#demarrage").css({
+        display: "none"
+    });
+    $("#slider").css({
+        display: "none"
+    });
+    $("#retroMachin").css({
+        display: "none"
+    });
+    $("#monCV").css({
+        display: "flex"
+    });
+})
 
 $(".lienSlider").click(function() {
+    $("#demarrage").css({
+        display: "none"
+    });
     $("#slider").css({
         display: "flex"
     });
     $("#retroMachin").css({
+        display: "none"
+    });
+    $("#monCV").css({
         display: "none"
     });
 })
 
 $(".lienRetro").click(function() {
+    $("#demarrage").css({
+        display: "none"
+    });
     $("#slider").css({
         display: "none"
     });
     $("#retroMachin").css({
         display: "flex"
     });
+    $("#monCV").css({
+        display: "none"
+    });
 })
 
 $(".lienHorloge").click(function() {
+    $("#demarrage").css({
+        display: "none"
+    });
     $("#slider").css({
         display: "none"
     });
     $("#retroMachin").css({
+        display: "none"
+    });
+    $("#monCV").css({
         display: "none"
     });
 })
