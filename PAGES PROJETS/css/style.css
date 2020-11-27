@@ -256,6 +256,18 @@ button {
     color: #000;
 }
 
+#demarrage h1 {
+    margin-bottom: 50px;
+}
+
+.iframe {
+    box-shadow: 4px 4px 4px #ccc;
+}
+
+#demarrage h2 {
+    margin-top: 50px;
+}
+
 
 
 #monCV {
