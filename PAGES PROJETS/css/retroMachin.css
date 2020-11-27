@@ -1,0 +1,214 @@
+                                        /* ----- GENERAL ----- */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+                                        /* ----- MAIN ----- */
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 6fr 100px;
+}
+
+                                        /* ----- HEADER ----- */
+header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    color: #f1f1f1;
+    font-size: 4em;
+    position: relative;
+    bottom: 20px;
+    font-family: 'Pangolin', cursive;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    /* border: 1px solid #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+#titre {
+    cursor: pointer;
+}
+
+                                        /* ----- BANNIERE ----- */
+aside {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url(../images/voiture.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+                                        /* ----- ARTICLES ----- */
+
+article {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 15;
+    background: linear-gradient(to right, #2196f3, #f44336);
+    height: auto;
+}
+
+.bienvenue {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+    transition-duration: 1s;
+}
+
+.containerConsoles {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cardConsole {
+    width: 300px;
+    height: 420px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #000;
+    position: relative;
+    background: linear-gradient(to top, #ece9e6, #ffffff);
+    margin: 10px;
+    
+}
+
+.prix {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 70px;
+    height: 70px;
+    /* border-radius: 50%; */
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-color: #e74c3c;
+    color: #fff;
+    font-weight: bold;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 4px #000;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.prix:hover {
+    top: -15px;
+    width: 80px;
+    height: 80px;
+}
+
+.cardConsole img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.cardTitle {
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #757f9a, #d7dde8);
+}
+
+.cardTitle hr {
+    width: 50%;
+    margin: 30px 0;
+}
+
+.description {
+    margin-top: 20px;
+}
+
+                                        /* ----- FOOTER ----- */
+footer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+}
+
+
+
+/* ----- RESPONSIVE ----- */
+
+@media screen and (max-width: 1200px) {
+    .bienvenue {
+        width: 95%;
+    }
+}

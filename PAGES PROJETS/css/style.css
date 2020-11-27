@@ -21,6 +21,7 @@ main {
     grid-template-rows: 1fr 6fr 0.5fr;
     color: #fff;
     position: relative;
+    background: linear-gradient(to bottom, #ece9e6, #ffffff);
 }
 
 header {
@@ -35,11 +36,14 @@ header {
 nav {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    background: linear-gradient(to right, #ece9e6, #ffffff);
+    background: linear-gradient(to bottom, #ece9e6, #ffffff);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border-right: 1px solid #ccc; */
+    box-shadow: 2px 0 4px #ccc;
+    z-index: 10;
 }
 
 nav p {
@@ -139,7 +143,7 @@ nav a {
 #accueil {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background: linear-gradient(to bottom, #000000, #434343);
+    background: linear-gradient(to bottom, #ece9e6, #ffffff);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -147,6 +151,7 @@ nav a {
     justify-content: center;
     align-items: center;
     position: relative;
+    height: auto;
 }
 
 footer {
@@ -208,7 +213,7 @@ footer {
 #slider {
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -235,4 +240,12 @@ button {
     background-image: url('../images/bled.jpg');
     background-size: cover;
     background-position: center;
+    box-shadow: 0 0 10px 5px #ccc;
+}
+
+
+#retroMachin {
+    width: 100%;
+    height: 100%;
+    display: none;
 }

@@ -1,5 +1,8 @@
+/* BOUTON BURGER */
+
 
 // $(".boutonBurger").click(function() {
+//     console.log("Coucou");
 //     $(".menuBurger").toggle("menuBurgerOpen");
 // })
 
@@ -9,6 +12,47 @@ let menuBurger = document.querySelector(".menuBurger");
 boutonBurger.addEventListener("click", function () {
     menuBurger.classList.toggle("menuBurgerOpen");
 });
+
+
+
+/* NAVIGATION */
+
+$(".lienCV").click(function() {
+    $("#slider").css({
+        display: "none"
+    });
+    $("#retroMachin").css({
+        display: "none"
+    });
+})
+
+
+$(".lienSlider").click(function() {
+    $("#slider").css({
+        display: "flex"
+    });
+    $("#retroMachin").css({
+        display: "none"
+    });
+})
+
+$(".lienRetro").click(function() {
+    $("#slider").css({
+        display: "none"
+    });
+    $("#retroMachin").css({
+        display: "flex"
+    });
+})
+
+$(".lienHorloge").click(function() {
+    $("#slider").css({
+        display: "none"
+    });
+    $("#retroMachin").css({
+        display: "none"
+    });
+})
 
 
 
@@ -36,3 +80,5 @@ function lancerSlider(n) {
 }
 
 // container.style.backgroundImage = `url('${images[0]}')`;
+
+
