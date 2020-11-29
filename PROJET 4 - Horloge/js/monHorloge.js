@@ -18,23 +18,12 @@ function tourne() {
 
 function lancerHorloge() {
 
-    if (rotateMin == 360) {
-        rotateSec = 0;
-        rotateMin = 0;
-        rotateHour += 6;
-        hourDiv.style.transform = `rotate(${rotateHour}deg)`;
-    } else {
-        if (rotateSec == 360) {
-            rotateSec = 0;
-            rotateMin += 6;
-            minDiv.style.transform = `rotate(${rotateMin}deg)`;
-            rotateSec += 6;
-            secDiv.style.transform = `rotate(${rotateSec}deg)`;
-        } else {
-            rotateSec += 6;
-            secDiv.style.transform = `rotate(${rotateSec}deg)`;
-        }
-    }
+    rotateSec += 6;
+    secDiv.style.transform = `rotate(${rotateSec}deg)`;
+    rotateMin += 0.1;
+    minDiv.style.transform = `rotate(${rotateMin}deg)`;
+    rotateHour += 0.01;
+    hourDiv.style.transform = `rotate(${rotateHour}deg)`;
 
 }
 
@@ -48,12 +37,22 @@ function tournePas() {
 
 
 
+// if (rotateMin == 360) {
+//     rotateSec = 0;
+//     rotateMin = 0;
+//     rotateHour += 6;
+//     hourDiv.style.transform = `rotate(${rotateHour}deg)`;
+// } else {
+//     if (rotateSec == 360) {
+//         rotateSec = 0;
+//         rotateMin += 6;
+//         minDiv.style.transform = `rotate(${rotateMin}deg)`;
+//         rotateSec += 6;
+//         secDiv.style.transform = `rotate(${rotateSec}deg)`;
+//     } else {
+//         rotateSec += 6;
+//         secDiv.style.transform = `rotate(${rotateSec}deg)`;
+//     }
+// }
 
 
-
-// rotateSec += 6;
-// secDiv.style.transform = `rotate(${rotateSec}deg)`;
-// rotateMin += 0.1;
-// minDiv.style.transform = `rotate(${rotateMin}deg)`;
-// rotateHour += 0.01;
-// hourDiv.style.transform = `rotate(${rotateHour}deg)`;
