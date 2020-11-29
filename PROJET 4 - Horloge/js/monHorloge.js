@@ -20,9 +20,9 @@ function lancerHorloge() {
 
     rotateSec += 6;
     secDiv.style.transform = `rotate(${rotateSec}deg)`;
-    rotateMin += 0.1;
+    rotateMin += 6 / 60;
     minDiv.style.transform = `rotate(${rotateMin}deg)`;
-    rotateHour += 0.01;
+    rotateHour += (6 / 60) / 60;
     hourDiv.style.transform = `rotate(${rotateHour}deg)`;
 
 }

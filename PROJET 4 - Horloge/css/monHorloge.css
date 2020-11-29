@@ -58,9 +58,9 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background-color: #000;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
     border-radius: 50%;
 }
 
@@ -73,7 +73,7 @@ h1 {
     text-align: center;
     font-size: 1rem;
     font-weight: 700;
-    padding: 18px;
+    padding: 10px;
 }
 
 .num:after {
@@ -82,8 +82,8 @@ h1 {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 5px;
-    height: 10px;
+    width: 2px;
+    height: 8px;
     background-color: #f1f1f1;
 }
 
@@ -186,13 +186,13 @@ h1 {
 }
 
 .min {
-    width: 4px;
+    width: 3px;
     height: 38%;
     border-radius: 2px;
 }
 
 .hour {
-    width: 8px;
+    width: 5px;
     height: 28%;
     border-radius: 8px;
 }
