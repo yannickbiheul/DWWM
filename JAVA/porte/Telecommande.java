@@ -14,9 +14,6 @@ public class Telecommande {
     public void presserBouton() {
         System.out.println("Télécommande => BIP Bouton pressé");
         if (trappe2.isOuverte()) {
-            trappe2.fermer();
-        } else {
-            trappe2.ouvrir();
             final Timer timer = new Timer();
             timer.schedule(new TimerTask() {
                 public void run() {
@@ -26,6 +23,8 @@ public class Telecommande {
                     }
                 }
             }, 10000);
+        } else {
+            trappe2.fermer();
         }
         
     }
