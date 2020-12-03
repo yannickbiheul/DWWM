@@ -26,7 +26,7 @@ public class Main {
         for (Specialite s : specialites) {
             System.out.println(s.getCode());
             if (s.getCode().equals(".net") || s.getCode().equals("Gestion de projets") || s.getCode().equals("PHP")) {
-                System.out.println("Aucun professeur dans cette spécialité");
+                System.out.println("\tAucun professeur dans cette spécialité");
             } else {
                 for (Professeur p : profs) {
                     if (p.getSpecialite().equals(s.getCode())) {

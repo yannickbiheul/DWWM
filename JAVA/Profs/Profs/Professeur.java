@@ -48,7 +48,7 @@ public class Professeur {
     }
 
     public String toString() {
-        return  "-" + this.getNom() + " " + this.getPrenom() + " " + this.getEmail();
+        return  "\t-" + this.getNom() + " " + this.getPrenom() + " " + this.getEmail();
     }
 
 }
