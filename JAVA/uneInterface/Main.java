@@ -6,10 +6,12 @@ public class Main {
 
         Bateau b1 = new Bateau();
         b1.masse = 60;
+        Hydravion hydr1 = new Hydravion();
 
         Port brest = new Port();
 
         brest.accueilEngin(b1);
+        brest.accueilEngin(hydr1);
 
     }
     
