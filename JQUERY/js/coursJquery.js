@@ -85,27 +85,27 @@ $(function($) {
         alert('Second évènement');
     });
 
-    // $('button').trigger('click.nom'); // exécute le clic, MAIS ne lance que la première alerte !
+    $('button').trigger('click.nom'); // exécute le clic, MAIS ne lance que la première alerte !
 
 
-    // // Supprimer un événement
-    // $('p').on('click', function () {
-    //     // du code ici
-    // });
+    // Supprimer un événement
+    $('p').on('click', function () {
+        // du code ici
+    });
 
-    // $('p').off('click'); // supprime tous les gestionnaires écoutant le clic
+    $('p').off('click'); // supprime tous les gestionnaires écoutant le clic
 
-    // $('p').off(); // supprimer tous les gestionnaires de n'importe quel évènement
+    $('p').off(); // supprimer tous les gestionnaires de n'importe quel évènement
 
 
-    // // Annuler la délégation
-    // $('body').on('click', 'p', function () {
-    //     // du code ici
-    // });
+    // Annuler la délégation
+    $('body').on('click', 'p', function () {
+        // du code ici
+    });
 
-    // $('body').off('click', 'p'); // supprime tous les gestionnaires d'évènements délégués sur les paragraphes
+    $('body').off('click', 'p'); // supprime tous les gestionnaires d'évènements délégués sur les paragraphes
 
-    // $('body').off('click', '**'); // supprime tous les gestionnaires d'évènements délégués
+    $('body').off('click', '**'); // supprime tous les gestionnaires d'évènements délégués
 
 
     /* ----- CSS ----- */
