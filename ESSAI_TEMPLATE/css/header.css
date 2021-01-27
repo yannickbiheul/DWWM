@@ -1,0 +1,161 @@
+header {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(../images/fond-route.jpg);
+    background-size: cover;
+    background-position: center;
+
+    padding-top: 80px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-color: var(--blue);
+}
+
+nav>a {
+    text-decoration: none;
+    color: #fff;
+
+    margin: 10px;
+}
+
+nav>a:last-child {
+    margin-right: 20px;
+}
+
+.boutonBurger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: none;
+
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid #fff;
+}
+
+.headerTitre {
+    width: 95%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid #fff; */
+}
+
+.headerPhoto {
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background-color: #fff;
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 4px #000;
+
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.2)50%, rgba(0, 0, 0, 0.2)50%), url(../images/moi.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.headerPhoto>img {
+    width: 100%;
+}
+
+.headerNom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #fff;
+    /* border: 1px solid #fff; */
+    margin-bottom: 40px;
+}
+
+.headerNom>h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.headerNom>p {
+    font-size: 1.2rem;
+}
+
+.headerBouton {
+    width: 100%;
+    height: auto;
+}
+
+.boutons {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+
+    /* border: 1px solid #fff; */
+}
+
+.boutons>a {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--blue);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #000;
+    transition-duration: 0.5s;
+}
+
+.boutons>a:hover {
+    padding: 12px;
+    font-size: 1.1rem;
+    box-shadow: 6px 6px 4px #000;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    nav>a {
+        display: none;
+    }
+
+    .boutonBurger {
+        display: flex;
+    }
+
+    .headerPhoto {
+        width: 150px;
+        height: 150px;
+
+        margin-bottom: 20px;
+    }
+}
