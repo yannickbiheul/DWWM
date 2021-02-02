@@ -1,0 +1,16 @@
+[class*="col-"] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.gris {
+    background-color: grey;
+}
+
+.jaune {
+    background-color: yellow;
+}
+
+.vert {
+    background-color: green;
+}

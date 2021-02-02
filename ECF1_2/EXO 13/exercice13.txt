@@ -1,0 +1,8 @@
+
+window.onload = function() {   $("table tr:nth-child(even)").addClass("even");};
+Ajoute une classe "even" à chaque ligne du tableau "paire" une fois que le DOM, les images et tout l'bordel sont chargés.
+ 
+
+$(document).ready(function() {   $("table tr:nth-child(even)").addClass("even");});
+Ajoute une classe "even" à chaque ligne du tableau "paire" une fois que le DOM est chargé.
+

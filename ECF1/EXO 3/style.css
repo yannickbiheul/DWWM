@@ -1,0 +1,84 @@
+body {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-width;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 1px solid #000;
+    width: 75%;
+    height: 500px;
+    max-height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: grid;
+    transform: translate(-50%, -50%);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    padding: 10px;
+}
+
+header {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    grid-column: 1 / span 8;
+    grid-row: 2 / span 1;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    grid-column: 9 / span 4;
+    grid-row: 2 / span 1;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    grid-column: 1 / span 12;
+    grid-row: 3 / span 1;
+    background-color: violet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 50px 50px 100px;
+    }
+
+    main {
+        grid-column: 1 / span 12;
+        grid-row: 2 / span 1;
+    }
+
+    aside {
+        grid-column: 1 / span 12;
+        grid-row: 3 / span 1;
+    }
+
+    footer {
+        grid-row: 4 / span 1;
+    }
+}

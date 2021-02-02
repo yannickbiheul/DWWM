@@ -1,0 +1,50 @@
+body {
+    width: 900px;
+    margin: auto;
+    /* border: 1px solid #000; */
+}
+
+h1 {
+    margin: 20px 10px;
+}
+
+div.conteneur {
+    text-align: center;
+    color: #fff;
+    background-color: #3445db;
+}
+
+.box {
+    background: #dba634;
+    height: 40px;
+    width: 100px;
+    display: inline-block;
+}
+
+.box:hover {
+    background-color: blue;
+}
+
+aside {
+    width: 15%;
+    height: 400px;
+    background-color: lightblue;
+    float: left;
+}
+
+article {
+    width: 85%;
+    height: 400px;
+    float: right;
+    background-color: orange;
+}
+
+iframe {
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+footer {
+    font-size: 10px;
+    background-color: silver;
+}

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'stay_and_shineregular';
+    src: url('stay_and_shine.woff2') format('woff2'),
+         url('stay_and_shine.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, p {
+    font-family: 'stay_and_shineregular', sans-serif;
+}
+
