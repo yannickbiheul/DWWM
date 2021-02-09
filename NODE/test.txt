@@ -1,0 +1,3 @@
+Salut !
+Voici un fichier de test.
+Merci de m'avoir lu, au revoir.
