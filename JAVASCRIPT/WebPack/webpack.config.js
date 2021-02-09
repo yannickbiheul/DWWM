@@ -1,4 +1,6 @@
 module.exports = {
     entry : './myFunction.js',
-    output : 'bundle.js'
+    output : {
+        filename : 'bundle.js'
+    }
 }
