@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Vue.js</title>
+    <!-- DESCRIPTION -->
+    <meta name='description' content='Débuts de vue.js'>
+    <!-- CSS -->
+    <link rel='stylesheet' href='css/main.css'>
+    <!-- GOOGLE FONTS -->
+    <!-- Roboto -->
+    <link href='https://fonts.googleapis.com/css2?family=Roboto&display=swap' rel='stylesheet'>
+    <!-- Quicksand -->
+    <link rel='preconnect' href='https://fonts.gstatic.com'>
+    <link href='https://fonts.googleapis.com/css2?family=Quicksand&display=swap' rel='stylesheet'>
+    <!-- Bangers -->
+    <link rel='preconnect' href='https://fonts.gstatic.com'>
+    <link href='https://fonts.googleapis.com/css2?family=Bangers&display=swap' rel='stylesheet'>
+    <!-- FONTAWESOME -->
+    <script src='https://kit.fontawesome.com/29ef46100e.js' crossorigin='anonymous'></script>
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>{{ titre }}</h1>
+        <h1 v-bind:titre="paragraphe">{{titre}}</h1>
+        <p v-bind:titre="paragraphe">{{ paragraphe }}</p>
+        <button v-on:click="maFonction">Go !</button>
+        <p v-if="seen">Maintenant vous me voyez</p>
+        <input type="text" v-model="titre">
+        <p><span v-html="strongTag"></span></p>
+        <p><span>{{strongTag}}</span></p>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src='js/main.js'></script>
+</body>
+</html>
