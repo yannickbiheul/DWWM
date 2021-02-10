@@ -1,3 +1,8 @@
+Vue.component('todo-item', {
+    props: ['todo'],
+    template: '<li>{{todo.text}}</li>'
+})
+
 new Vue({
     el: "#app",
     data: {
@@ -44,5 +49,23 @@ new Vue({
         majuscules: function(value) {
             return value.toUpperCase();
         }
+    }
+})
+
+new Vue({
+    el: "#app3",
+    data: {
+        todos: [
+            { text: "Premier texte" },
+            { text: "Deuxième texte" },
+            { text: "Troisième texte" }
+        ],
+        message: "",
+        groceryList: [
+            { id: 0, text:"Légumes"},
+            { id: 1, text: "Fruits" },
+            { id: 2, text: "Fromage" },
+            { id: 3, text: "Bières" }
+        ]
     }
 })

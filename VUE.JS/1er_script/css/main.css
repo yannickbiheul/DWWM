@@ -20,9 +20,14 @@ body {
     width: 100%;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
 }
 
 button {
