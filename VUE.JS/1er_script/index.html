@@ -25,7 +25,7 @@
 
 <body>
 
-    <div id="app">
+    <div id="app" class="section">
         <h1>{{ titre }}</h1>
         <p v-bind:titre="paragraphe">{{ paragraphe }}</p>
         <button v-on:click="maFonction">Go !</button>
@@ -33,22 +33,18 @@
         <input type="text" v-model="titre">
         <p><span v-html="strongTag"></span></p>
         <p>{{date}}</p>
-        <button v-on:click="increment">Incrémente</button>
-        <button @click="decrement">Décrémente</button>
-        <div>{{compteur}}</div>
-        <p>{{wordComputed}}</p>
-        <p @mouseover="hover">Lorem ipsum dolor sit amet <span>coucou</span> Balise: {{tagName}}</p>
     </div>
 
-    <div id="app2">
+    <div id="app2" class="section">
         <h1>{{titre}}</h1>
         <button @click="isBlue = !isBlue">Bleu</button>
         <h3 :class="{blue: isBlue}">Un texte en bleu</h3>
         <br>
         <p>{{myText | firstWord | majuscules}}</p>
+        <mycomponent>
     </div>
 
-    <div id="app3">
+    <div id="app3" class="section">
         <h1>Section 3</h1>
         <ul>
             <li v-for="todo in todos">{{todo.text}}</li>
@@ -62,6 +58,22 @@
             v-bind:key="item.id">
             </todo-item>
         </ol>
+    </div>
+
+    <div id="app4" class="section">
+        <h1>Section 4</h1>
+        <button v-on:click="increment">Incrémente</button>
+        <button @click="decrement">Décrémente</button>
+        <div>{{compteur}}</div>
+        <p>{{wordComputed}}</p>
+        <p @mouseover="hover">Lorem ipsum dolor sit amet <span>coucou</span> Balise: {{tagName}}</p>
+    </div>
+
+    <div id="app5" class="section">
+        <h1>Section 5</h1>
+        <essaiprop title="Hello i am essaiProp" mytext="Texte de clickTest"></essaiprop>
+        <newcomponent v-bind:montitre="titleData" mytext="texte de clickTest"></newcomponent>
+        <uneboucle v-for="chaquetitre in titresData" v-bind:montitre="chaquetitre"></uneboucle>
     </div>
 
     <!-- JAVASCRIPT -->
