@@ -27,13 +27,25 @@
 
     <div id="app">
         <h1>{{ titre }}</h1>
-        <h1 v-bind:titre="paragraphe">{{titre}}</h1>
         <p v-bind:titre="paragraphe">{{ paragraphe }}</p>
         <button v-on:click="maFonction">Go !</button>
         <p v-if="seen">Maintenant vous me voyez</p>
         <input type="text" v-model="titre">
         <p><span v-html="strongTag"></span></p>
-        <p><span>{{strongTag}}</span></p>
+        <p>{{date}}</p>
+        <button v-on:click="increment">Incrémente</button>
+        <button @click="decrement">Décrémente</button>
+        <div>{{compteur}}</div>
+        <p>{{wordComputed}}</p>
+        <p @mouseover="hover">Lorem ipsum dolor sit amet <span>coucou</span> Balise: {{tagName}}</p>
+    </div>
+
+    <div id="app2">
+        <h1>{{titre}}</h1>
+        <button @click="isBlue = !isBlue">Bleu</button>
+        <h3 :class="{blue: isBlue}">Un texte en bleu</h3>
+        <br>
+        <p>{{myText | firstWord | majuscules}}</p>
     </div>
 
     <!-- JAVASCRIPT -->

@@ -21,6 +21,15 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+button {
+    padding: 10px;
+    width: auto;
+}
+
+.blue {
+    color: var(--blue);
 }
