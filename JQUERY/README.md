@@ -1,2 +1,0 @@
-# dwwm-JQUERY
-DWWM - jQuery
